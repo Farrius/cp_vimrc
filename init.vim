@@ -19,3 +19,9 @@ call plug#end()
 
 "colorsitos
 colorscheme gruvbox
+
+"spacio es el leader
+let mapleader = " "
+
+"maps
+nnoremap <leader>gg :w <bar> !g++ -std=c++14 % -o %:r <CR>
