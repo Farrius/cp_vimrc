@@ -20,8 +20,13 @@ call plug#end()
 "colorsitos
 colorscheme gruvbox
 
-"spacio es el leader
+let g:split_term_style = 'vertical'
 let mapleader = " "
 
 "maps
-nnoremap <leader>gg :w <bar> !g++ -std=c++14 % -o %:r <CR>
+"compilar el c++
+nnoremap <leader><F2> :w <bar> !g++ -std=c++14 % -o %:r <CR>
+"ejecutar el programa
+nnoremap <leader><F3> :!./%:r < in<CR>
+"abrir el input
+nnoremap <leader>m <C-w>v<C-w>w <bar> :e in<CR> <bar> :vertical resize 45 <CR>
