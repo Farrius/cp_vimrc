@@ -29,4 +29,6 @@ nnoremap <leader><F2> :w <bar> !g++ -std=c++14 % -o %:r <CR>
 "ejecutar el programa
 nnoremap <leader><F3> :!./%:r < in<CR>
 "abrir el input
-nnoremap <leader>m <C-w>v<C-w>w <bar> :e in<CR> <bar> :vertical resize 45 <CR>
+nnoremap <leader>m <C-w>v<C-w>w <bar> :e in<CR>
+"rescalar un bufer vertical
+nnoremap <leader>rv :vertical resize 45 <CR>
