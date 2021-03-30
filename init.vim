@@ -25,9 +25,9 @@ let mapleader = " "
 
 "maps
 "compilar el c++
-nnoremap <leader><F2> :w <bar> !g++ -std=c++14 % -o %:r <CR>
+nnoremap <leader><F2> :w <bar> !g++ -std=c++14 % -o _z <CR>
 "ejecutar el programa
-nnoremap <leader><F3> :!./%:r < in<CR>
+nnoremap <leader><F3> :!./_z < in<CR>
 "abrir el input
 nnoremap <leader>m <C-w>v<C-w>w <bar> :e in<CR>
 "rescalar un bufer vertical
