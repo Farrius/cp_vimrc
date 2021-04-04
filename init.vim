@@ -23,12 +23,10 @@ colorscheme gruvbox
 let g:split_term_style = 'vertical'
 let mapleader = " "
 
-"maps
+"map
 "compilar el c++
-nnoremap <leader><F2> :w <bar> !g++ -std=c++14 % -o _z <CR>
+autocmd filetype cpp nnoremap <leader><F2> :w <bar> !g++ -std=c++14 % -o _%:r <CR>
 "ejecutar el programa
-nnoremap <leader><F3> :!./_z < in<CR>
-"abrir el input
-nnoremap <leader>m <C-w>v<C-w>w <bar> :e in<CR>
+autocmd filetype cpp nnoremap <leader><F3> :!./_%:r < in <CR>
 "rescalar un bufer vertical
-nnoremap <leader>rv :vertical resize 45 <CR>
+nnoremap <leader>rv :vertical resize 35 <CR>
