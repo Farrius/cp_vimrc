@@ -4,6 +4,7 @@ set nu
 set nohlsearch
 set hidden
 set scrolloff=999
+set guicursor=
 
 let mapleader = ' ' 
 "compilar el c++
