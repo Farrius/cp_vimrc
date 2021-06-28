@@ -1,7 +1,6 @@
 set smartindent
 set relativenumber
 set nu
-set nohlsearch
 set hidden
 set scrolloff=999
 set guicursor=
